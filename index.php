@@ -12,7 +12,7 @@
                 <h1 class="logo"> PHP asknkasdlas- B&aacute;sico</h1>
 
                 <nav>
-                    <a href="#">Inicio</a></li>
+                    <a href="#">Inicio limpieza</a></li>
                     <a href="views/login.php">Login</a></li>
                 </nav>
             </div>
