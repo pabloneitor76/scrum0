@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Formulario</title>
+        <title>Formulario 1</title>
 
         <link type="text/css" rel="stylesheet" href="public/css/estilos.css"/>
     </head>
