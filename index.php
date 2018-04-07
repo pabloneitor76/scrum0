@@ -19,7 +19,7 @@
         </header>
 
         <section class="contenido wrapper">
-            <h1>Pagina de Inicio</h1>
+            <h1>Pagina de Inicio 1</h1>
 
         </section>
     </body>
