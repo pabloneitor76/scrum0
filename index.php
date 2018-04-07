@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="wrapper">
-                <h1 class="logo"> PHP - B&aacute;sico</h1>
+                <h1 class="logo"> PHP asknkasdlas- B&aacute;sico</h1>
 
                 <nav>
                     <a href="#">Inicio</a></li>
