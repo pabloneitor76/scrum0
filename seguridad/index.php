@@ -1,58 +1,44 @@
-
-<?php include('controllers/controladorDocentes.php'); ?>
-
+<?php //include('controllers/autentificar.php'); ?>
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    
-    <link rel="stylesheet" href="public/css/main.css">
-    <title>Sistema de Publicidad</title>
-</head>
-<body>
-    <div class="col-md-4 center-block quitar-float text-center espacio-arriba uno">
-        <marquee direction = up>
-            <img src="uploads/logo.png" class="center-block">
-            <h1 class="text-center">BIENVENIDOS A LOS LABORATORIOS DE INFORMATICA Y SISTEMAS</h1>
-        </marquee>
-        <h1 class="lobster morado">Tipos de letras</h1>
-        <h2>Ven y diviertete con nosotros</h2>
-        <h3 class="pt-sans">Bienvenidos a los laboratorios de Informatica y Sistemas</h3>
-        <nav>
-            <a href="http://google.com" class="espacio-derecha">Buscanos en:</a>
-            <a href="http://facebook.com" class="espacio-derecha">Tambien estamos en facebook</a>
-            <a href="" class="espacio-derecha">acercate y disfruta</a>
-        </nav>
-    </div>
-    <div class="dos">
-        <p>Segundo espacio</p>
-    </div>
-    <div class="tres">
-        <p>Tercer espacio</p>
-    </div>
-    <div class ="cuatro">
-        <p>cuarto espacio</p>
-    </div>
-    <MARQUEE bgcolor="#881C82">
-        <h3 class="pt-sans">
-            <tbody class="celda">
-              <?php
-                $usuarios = listaDocentes();
+    <head>
+        <title>Formularios</title>
+
+        <link type="text/css" rel="stylesheet" href="../public/css/estilos.css"/>
+        <link type="text/css" rel="stylesheet" href="../public/css/formularios.css"/>
+    </head>
+
+    <body>
+        <header>
+            <div class="wrapper">
+                
+
+                <nav>
+                    <a href="../index.php">Inicio</a></li>
+                    
+                    <a href="views/lista.php">Ver Lista</a>
+                </nav>
+            </div>
+        </header>
+
+        <section class="contenido wrapper">
+            <h1>Tabla</h1>
+
+            <fieldset>
+              <form action="controllers/autentificar.php" method="POST">
+                <label>Equipo</label>
+                <input type="text" name="pais" required>
+                <br>
+
+                <label>Valor en Goles</label>
+                <input type="text" name="valor" required>
+
+                <br>
+                <input type="submit" name="registrar" value="registrar">
 
 
-                foreach ($usuarios as $usuario):
-              ?>
-              
-              <tr class="celda">
-                <td class="celda"><?php echo $usuario['id_docentes'] ?></td>
-                <td><?php echo $usuario['nombre'] ?></td>
-                <td><?php echo $usuario['hora'] ?></td>
-                <td><?php echo $usuario['materia'] ?></td>
-              </tr>
-            
-              <?php endforeach; ?>
-            </tbody>
-        </h3>
-    </MARQUEE>
-</body>
+              </form>
+            </fieldset>
+        </section>
+    </body>
 </html>
